@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sleep Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h2>Sign In</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Sign In</button>
+    </form>
+    <canvas id="myChart"></canvas>
+  </div>
+  <script src="script.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
+  
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBisnFt8R4vp1SUMDgOYIeXz096heC-WNk",
+      authDomain: "sleep-tracker-610d0.firebaseapp.com",
+      projectId: "sleep-tracker-610d0",
+      storageBucket: "sleep-tracker-610d0.appspot.com",
+      messagingSenderId: "953017349759",
+      appId: "1:953017349759:web:8dc0b70098b163c35d714a",
+      measurementId: "G-R9WS6Z8CJG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+  }
+  
+  form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
+  }
+  
+  form button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: #004c99;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
